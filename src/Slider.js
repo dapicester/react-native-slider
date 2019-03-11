@@ -247,7 +247,7 @@ export default class Slider extends PureComponent {
         ? [0, -(containerSize.width - thumbSize.width)]
         : [0, containerSize.width - thumbSize.width],
       // extrapolate: 'clamp',
-    });
+    }).__getValue();
     const minimumTrackWidth = value.interpolate({
       inputRange: [minimumValue, maximumValue],
       outputRange: [0, containerSize.width - thumbSize.width],
